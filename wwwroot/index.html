@@ -1,0 +1,772 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mivella Fashion | Loungewear & Innerwear Rayon Premium</title>
+
+    <meta name="description"
+          content="Mivella Fashion menghadirkan loungewear dan innerwear berbahan rayon yang adem, lembut, dan nyaman untuk keseharian.">
+
+    <meta name="theme-color" content="#3B2430">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600&family=Manrope:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+    <header class="site-header">
+        <div class="container">
+
+            <a href="#home" class="logo" aria-label="Mivella Fashion">
+                Mivella
+                <small>FASHION</small>
+            </a>
+
+            <nav class="main-nav" aria-label="Navigasi utama" id="mainNav">
+                <a href="#home" class="active">Home</a>
+                <a href="#produk">Produk</a>
+                <a href="#tentang">Tentang Kami</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+
+            <div class="header-icons">
+
+                <button class="icon-btn" id="searchBtn" type="button" aria-label="Cari produk">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <line x1="21" y1="21" x2="16.6" y2="16.6"></line>
+                    </svg>
+                </button>
+
+                <button class="icon-btn" id="wishlistBtn" type="button" aria-label="Buka wishlist">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <path d="M12.1 20.5s-7.6-4.6-9.9-9.1C.6 7.9 2.2 4.6 5.4 3.9c2-.5 3.9.3 5.1 1.9.2.3.7.3.9 0 1.2-1.6 3.1-2.4 5.1-1.9 3.2.7 4.8 4 3.2 7.5-2.3 4.5-9.9 9.1-9.9 9.1Z"></path>
+                    </svg>
+                    <span class="count-pill" id="wishlistCount" aria-label="0 item wishlist">0</span>
+                </button>
+
+                <button class="icon-btn" id="cartBtn" type="button" aria-label="Buka keranjang belanja">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <path d="M6 8h12l-1 12H7L6 8Z"></path>
+                        <path d="M9 8V6a3 3 0 0 1 6 0v2"></path>
+                    </svg>
+                    <span class="count-pill" id="cartCount" aria-label="0 item di keranjang">0</span>
+                </button>
+
+                <button class="burger" id="burgerBtn" type="button" aria-label="Buka menu" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+    <main id="home">
+
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+
+                <div class="hero-copy reveal reveal-left">
+
+                    <span class="tag-label">Rayon Premium</span>
+
+                    <h1 id="hero-title">
+                        Nyaman itu
+                        <br>
+                        <em>kemewahan</em> sehari-hari.
+                    </h1>
+
+                    <p class="lede">
+                        Loungewear dan innerwear berbahan rayon yang adem,
+                        lembut, dan nyaman menemani harimu. Dirancang untuk
+                        perempuan Indonesia yang ingin merasa nyaman tanpa
+                        mengorbankan gaya.
+                    </p>
+
+                    <div class="hero-cta-row">
+                        <a href="#produk" class="btn btn-primary">
+                            Lihat Koleksi
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#tentang" class="btn btn-outline">Tentang Kami</a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <span class="stars" aria-label="Rating 5 dari 5">★★★★★</span>
+                        <span><strong>4.9/5</strong> dari 500+ pelanggan</span>
+                    </div>
+
+                    <div class="hero-chips">
+                        <span class="chip">10+ Kategori</span>
+                        <span class="chip">Checkout via WhatsApp</span>
+                        <span class="chip">COD Area Cileungsi</span>
+                    </div>
+
+                </div>
+
+                <div class="hero-art reveal reveal-right">
+                    <div class="frame">
+                        <img src="https://picsum.photos/seed/mivella-hero/900/1125" alt="Model mengenakan loungewear Mivella Fashion" loading="eager">
+                    </div>
+                    <div class="hero-fabric-chip">
+                        <img src="https://picsum.photos/seed/mivella-fabric/260/260" alt="Tekstur kain rayon Mivella Fashion" loading="lazy">
+                    </div>
+                    <div class="hero-badge">
+                        <div class="swatch"></div>
+                        <strong>Est. Bogor</strong>
+                        <span>Adem · Jatuh · Halus</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MARQUEE -->
+        <div class="marquee-strip" aria-hidden="true">
+            <div class="marquee-track">
+                <span>Mivella Fashion</span>
+                <span>Rayon Adem &amp; Lembut</span>
+                <span>Innerwear Wanita</span>
+                <span>Loungewear Nyaman</span>
+                <span>Nyaman Sepanjang Hari</span>
+                <span>Mivella Fashion</span>
+                <span>Rayon Adem &amp; Lembut</span>
+                <span>Innerwear Wanita</span>
+                <span>Loungewear Nyaman</span>
+                <span>Nyaman Sepanjang Hari</span>
+            </div>
+        </div>
+
+        <!-- CATEGORY -->
+        <section class="section" id="kategori" aria-labelledby="category-title">
+            <div class="container">
+
+                <div class="section-head reveal reveal-up">
+                    <div>
+                        <span class="tag-label">Jelajahi</span>
+                        <h2 id="category-title">Temukan gaya <span class="italic">favoritmu</span></h2>
+                    </div>
+                    <p class="sub">
+                        Mulai dari innerwear hingga loungewear,
+                        temukan pakaian yang cocok untuk setiap momen di rumah.
+                    </p>
+                </div>
+
+                <div class="cat-rail" id="catRail"></div>
+
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section class="section" id="produk" aria-labelledby="product-title">
+            <div class="container">
+
+                <div class="section-head reveal reveal-up">
+                    <div>
+                        <span class="tag-label">Koleksi Mivella</span>
+                        <h2 id="product-title">Pilihan <span class="italic">favorit</span></h2>
+                    </div>
+                    <p class="sub">
+                        Koleksi pilihan dengan bahan yang nyaman,
+                        desain feminin, dan harga yang tetap terjangkau
+                        untuk pemakaian sehari-hari.
+                    </p>
+                </div>
+
+                <div class="filter-pills reveal reveal-up" data-delay="100" id="filterPills" role="group" aria-label="Filter kategori produk">
+                    <button class="pill active" type="button" data-filter="Semua">Semua</button>
+                    <button class="pill" type="button" data-filter="Bra">Bra</button>
+                    <button class="pill" type="button" data-filter="Setelan">Setelan Tanktop</button>
+                    <button class="pill" type="button" data-filter="Daster">Daster</button>
+                    <button class="pill" type="button" data-filter="Dress">Dress</button>
+                    <button class="pill" type="button" data-filter="Sleepwear">Sleepwear</button>
+                </div>
+
+                <div class="product-grid reveal reveal-up" data-delay="160" id="productGrid" aria-live="polite">
+                    <!-- Produk di-render oleh JavaScript -->
+                </div>
+
+                <div class="grid-more reveal reveal-up" data-delay="220">
+                    <button class="btn btn-outline" id="loadMoreBtn" type="button">Lihat Produk Lainnya</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- VALUE STRIP -->
+        <section class="value-strip" aria-label="Keunggulan Mivella Fashion">
+            <div class="container">
+
+                <div class="value-item reveal reveal-up" data-delay="0">
+                    <svg class="vicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                        <path d="M12 3c3 3 5 6 5 9a5 5 0 0 1-10 0c0-3 2-6 5-9Z"></path>
+                    </svg>
+                    <h4>Adem</h4>
+                    <p>Rayon yang terasa sejuk dan nyaman, cocok untuk iklim tropis.</p>
+                </div>
+
+                <div class="value-item reveal reveal-up" data-delay="100">
+                    <svg class="vicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                        <path d="M4 12c4-6 12-6 16 0-4 6-12 6-16 0Z"></path>
+                        <circle cx="12" cy="12" r="2.4"></circle>
+                    </svg>
+                    <h4>Terjangkau</h4>
+                    <p>Kualitas nyaman dengan harga yang tetap bersahabat untuk pemakaian rutin.</p>
+                </div>
+
+                <div class="value-item reveal reveal-up" data-delay="200">
+                    <svg class="vicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                        <path d="M6 3h12l-1 18-5-3-5 3L6 3Z"></path>
+                    </svg>
+                    <h4>Kebutuhan Harian</h4>
+                    <p>Dari innerwear hingga loungewear untuk menemani rutinitas sehari-hari.</p>
+                </div>
+
+                <div class="value-item reveal reveal-up" data-delay="300">
+                    <svg class="vicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                        <path d="M9 12l2 2 4-4"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                    </svg>
+                    <h4>Dipilih dengan Teliti</h4>
+                    <p>Setiap model dipilih dengan mempertimbangkan kenyamanan, bahan, dan desain.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section about-section" id="tentang" aria-labelledby="about-title">
+            <div class="container">
+
+                <div class="about-art reveal reveal-left">
+                    <div class="frame">
+                        <img src="https://picsum.photos/seed/mivella-about/800/920" alt="Model mengenakan loungewear Mivella Fashion" loading="lazy">
+                    </div>
+                    <div class="about-swatch">
+                        <img src="https://picsum.photos/seed/mivella-swatch/300/300" alt="Setelan baby blue Mivella Fashion" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="about-copy reveal reveal-right">
+                    <span class="tag-label">Cerita Kami</span>
+                    <h2 id="about-title">Kenyamanan adalah <span class="italic">kemewahan</span> sehari-hari</h2>
+
+                    <p class="lede">
+                        Mivella Fashion lahir dari keyakinan bahwa
+                        pakaian yang nyaman adalah bagian dari
+                        self-care. Berawal dari usaha rumahan di
+                        Cileungsi, Bogor, kami menghadirkan
+                        innerwear dan loungewear yang terasa ringan,
+                        lembut, dan nyaman digunakan sehari-hari.
+                    </p>
+
+                    <ul class="about-list">
+                        <li>
+                            <span class="num">01</span>
+                            <div>
+                                <h4>Adem</h4>
+                                <p>Bahan yang terasa sejuk dan nyaman untuk digunakan di iklim tropis.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="num">02</span>
+                            <div>
+                                <h4>Lembut</h4>
+                                <p>Tekstur kain yang halus dan jatuh, nyaman dari pagi hingga malam.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="num">03</span>
+                            <div>
+                                <h4>Timeless</h4>
+                                <p>Model feminin yang mudah dipadukan dan tetap relevan untuk digunakan sehari-hari.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="about-quote">
+                        "Pakai yang terasa seperti dirimu."
+                        <cite>Tim Mivella Fashion</cite>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BANNER CTA -->
+        <section class="section-tight" aria-label="Ajakan berbelanja">
+            <div class="container">
+                <div class="banner-cta reveal reveal-scale">
+                    <img src="https://picsum.photos/seed/mivella-banner/1600/700" alt="Suasana santai menggunakan loungewear Mivella Fashion" loading="lazy">
+                    <div class="banner-inner">
+                        <span class="tag-label">Mivella Everyday</span>
+                        <h2>Nyaman untuk <em>setiap momen.</em></h2>
+                        <a href="#produk" class="btn btn-ghost-light">Belanja Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSTAGRAM -->
+        <section class="section insta-strip" aria-labelledby="instagram-title">
+            <div class="container">
+
+                <div class="insta-head reveal reveal-up">
+                    <span class="tag-label">Komunitas</span>
+                    <h2 id="instagram-title">Follow <span class="italic">Mivella Fashion</span></h2>
+                    <a href="https://instagram.com/mivellafashion" target="_blank" rel="noopener noreferrer" class="insta-handle" aria-label="Instagram Mivella Fashion">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <circle cx="17.2" cy="6.8" r="1"></circle>
+                        </svg>
+                        @mivellafashion
+                    </a>
+                </div>
+
+                <div class="insta-grid" id="instaGrid"></div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="kontak" aria-labelledby="contact-title">
+            <div class="container">
+
+                <div class="contact-head reveal reveal-up">
+                    <span class="tag-label">Hubungi Kami</span>
+                    <h2 id="contact-title">Ada yang ingin <span class="italic">ditanyakan?</span></h2>
+                    <p>Tanya stok, ukuran, warna, atau langsung hubungi kami untuk melakukan pemesanan.</p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <a href="https://wa.me/6285283092499" target="_blank" rel="noopener noreferrer" class="contact-card reveal reveal-up" data-delay="0">
+                        <div class="cicon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                <path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5Z"></path>
+                            </svg>
+                        </div>
+                        <h4>WhatsApp</h4>
+                        <p>0852-8309-2499</p>
+                    </a>
+
+                    <a href="https://instagram.com/mivellafashion" target="_blank" rel="noopener noreferrer" class="contact-card reveal reveal-up" data-delay="100">
+                        <div class="cicon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <circle cx="17.2" cy="6.8" r="1"></circle>
+                            </svg>
+                        </div>
+                        <h4>Instagram</h4>
+                        <p>@mivellafashion</p>
+                    </a>
+
+                    <div class="contact-card reveal reveal-up" data-delay="200">
+                        <div class="cicon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"></path>
+                                <circle cx="12" cy="9.5" r="2.4"></circle>
+                            </svg>
+                        </div>
+                        <h4>Lokasi</h4>
+                        <p>Cileungsi, Bogor</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-brand reveal reveal-up">
+                    <a href="#home" class="logo" aria-label="Mivella Fashion">
+                        Mivella
+                        <small>FASHION</small>
+                    </a>
+                    <p>
+                        Innerwear dan loungewear untuk perempuan
+                        yang ingin merasa nyaman, percaya diri,
+                        dan tetap stylish setiap hari.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/mivellafashion" target="_blank" rel="noopener noreferrer" aria-label="Instagram Mivella Fashion">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <circle cx="17.2" cy="6.8" r="1"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/6285283092499" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Mivella Fashion">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                <path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col reveal reveal-up" data-delay="100">
+                    <h5>Kategori</h5>
+                    <ul>
+                        <li><a href="#produk" data-filter="Bra">Bra</a></li>
+                        <li><a href="#produk" data-filter="Setelan">Setelan Tanktop</a></li>
+                        <li><a href="#produk" data-filter="Daster">Daster</a></li>
+                        <li><a href="#produk" data-filter="Dress">Dress</a></li>
+                        <li><a href="#produk" data-filter="Sleepwear">Sleepwear</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col reveal reveal-up" data-delay="200">
+                    <h5>Tautan</h5>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#produk">Produk</a></li>
+                        <li><a href="#tentang">Tentang Kami</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                        <li><a href="https://wa.me/6285283092499" target="_blank" rel="noopener noreferrer">Order via WhatsApp</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom reveal reveal-up">
+                <span>© 2026 Mivella Fashion</span>
+                <span>Dibuat untuk kenyamanan sehari-hari</span>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- CART / CHECKOUT OVERLAY -->
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+
+    <!-- CART DRAWER -->
+    <aside class="drawer" id="cartDrawer" aria-label="Keranjang dan checkout">
+
+        <div id="cartView">
+
+            <div class="drawer-head">
+                <div>
+                    <h3 id="cartTitle">Keranjang</h3>
+                    <span class="brand-tag">Mivella Fashion</span>
+                </div>
+                <button class="drawer-close" id="closeCart" type="button" aria-label="Tutup keranjang">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <line x1="5" y1="5" x2="19" y2="19"></line>
+                        <line x1="19" y1="5" x2="5" y2="19"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="drawer-tabs">
+                <button class="drawer-tab active" type="button" data-tab="bag">Bag (<span id="tabBagCount">0</span>)</button>
+                <button class="drawer-tab" type="button" data-tab="wishlist">Wishlist (<span id="tabWishCount">0</span>)</button>
+            </div>
+
+            <div class="drawer-body" id="bagPanel">
+                <div id="cartLines"></div>
+            </div>
+
+            <div class="drawer-body" id="wishPanel" style="display:none;">
+                <div id="wishLines"></div>
+            </div>
+
+            <div class="drawer-foot" id="cartFoot">
+                <div class="ship-progress" id="shipProgress">
+                    <span class="label" id="shipLabel">Belanja <strong>Rp75.000</strong> lagi untuk gratis ongkir</span>
+                    <div class="track">
+                        <div class="fill" id="shipFill" style="width:0%"></div>
+                    </div>
+                </div>
+
+                <div class="subtotal-row">
+                    <span class="label">Subtotal</span>
+                    <span class="amount" id="cartSubtotal">Rp0</span>
+                </div>
+
+                <button class="btn btn-dark btn-block" id="goCheckout" type="button">Lanjut Checkout</button>
+            </div>
+
+        </div>
+
+
+        <!-- CHECKOUT VIEW -->
+        <div id="checkoutView" style="display:none;">
+
+            <div class="drawer-head">
+                <div>
+                    <h3>Checkout</h3>
+                    <span class="brand-tag">Mivella Fashion</span>
+                </div>
+                <button class="drawer-close" id="closeCheckout" type="button" aria-label="Tutup checkout">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <line x1="5" y1="5" x2="19" y2="19"></line>
+                        <line x1="19" y1="5" x2="5" y2="19"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="step-indicator">
+                <div class="step active" data-step="1"><span class="dot">1</span>Detail</div>
+                <div class="connector"></div>
+                <div class="step" data-step="2"><span class="dot">2</span>Ringkasan</div>
+                <div class="connector"></div>
+                <div class="step" data-step="3"><span class="dot">3</span>Selesai</div>
+            </div>
+
+            <div class="drawer-body">
+
+                <!-- STEP 1 -->
+                <div id="stepDetails">
+
+                    <div class="form-field">
+                        <label for="fName">Nama Lengkap</label>
+                        <input type="text" id="fName" name="name" autocomplete="name" placeholder="Nama kamu">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="fPhone">No. WhatsApp</label>
+                        <input type="tel" id="fPhone" name="phone" autocomplete="tel" placeholder="08xxxxxxxxxx">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="fAddress">Alamat Pengiriman</label>
+                        <textarea id="fAddress" name="address" rows="3" autocomplete="street-address" placeholder="Alamat lengkap + kota"></textarea>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="fNote">Catatan</label>
+                        <input type="text" id="fNote" name="note" placeholder="Contoh: minta warna pink">
+                    </div>
+
+                    <div class="form-field">
+                        <label>Metode Pembayaran</label>
+                        <div class="pay-options">
+                            <button type="button" class="pay-opt active" data-pay="wa">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5Z"></path>
+                                </svg>
+                                <strong>Chat WhatsApp</strong>
+                                <span>Konfirmasi langsung ke admin</span>
+                            </button>
+                            <button type="button" class="pay-opt" data-pay="bank">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <rect x="3" y="10" width="18" height="9" rx="1"></rect>
+                                    <path d="M3 10 12 4l9 6"></path>
+                                    <line x1="7" y1="14" x2="7" y2="17"></line>
+                                    <line x1="12" y1="14" x2="12" y2="17"></line>
+                                    <line x1="17" y1="14" x2="17" y2="17"></line>
+                                </svg>
+                                <strong>Transfer Bank</strong>
+                                <span>BCA a.n. Mivella Fashion</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- STEP 2 -->
+                <div id="stepReview" style="display:none;">
+                    <div class="review-block">
+                        <h5>Data Pemesan</h5>
+                        <p id="reviewCustomer"></p>
+                    </div>
+                    <div class="review-block">
+                        <h5>Pesanan</h5>
+                        <div id="reviewItems"></div>
+                        <div class="review-total">
+                            <span>Total</span>
+                            <span id="reviewTotal">Rp0</span>
+                        </div>
+                    </div>
+                    <div class="review-block">
+                        <h5>Metode Pembayaran</h5>
+                        <p id="reviewPay"></p>
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div id="stepDone" style="display:none;">
+                    <div class="success-box">
+                        <div class="success-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+
+                        <h3>Terima Kasih!</h3>
+
+                        <p style="margin-top:8px; font-size:14px; color:rgba(36,24,35,.65);">
+                            Pesanan <span class="order-id" id="orderId"></span> berhasil dibuat.
+                        </p>
+
+                        <p style="font-family:var(--font-display); font-size:26px; font-weight:700; margin-top:10px; color:var(--plum);" id="orderTotal"></p>
+
+                        <div class="bank-box" id="bankBox">
+                            <span style="font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--rose-dark); font-weight:700;">Transfer ke</span>
+                            <div class="bank-name">BCA | 1234567890</div>
+                            <div style="font-size:13px; margin-top:2px;">a.n. Mivella Fashion</div>
+                            <div class="bank-note">Konfirmasi bukti transfer via WhatsApp setelah pembayaran.</div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block" id="waFinishBtn" type="button">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                <path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5Z"></path>
+                            </svg>
+                            Lanjutkan ke WhatsApp
+                        </button>
+
+                        <button class="btn btn-outline btn-block" id="backToShopBtn" type="button" style="margin-top:10px;">Kembali Belanja</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="drawer-foot" id="checkoutFootNav">
+                <button class="btn btn-outline btn-block" id="checkoutBackBtn" type="button">Kembali</button>
+                <div style="height:10px;"></div>
+                <button class="btn btn-dark btn-block" id="checkoutNextBtn" type="button">Review Pesanan</button>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- QUICK VIEW MODAL -->
+    <div class="modal-overlay" id="qvOverlay" aria-hidden="true">
+        <div class="qv-modal" role="dialog" aria-modal="true" aria-labelledby="qvName">
+
+            <div class="qv-media">
+                <img id="qvImage" src="" alt="">
+            </div>
+
+            <div class="qv-details">
+                <button class="qv-close" id="qvClose" type="button" aria-label="Tutup detail produk">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <line x1="5" y1="5" x2="19" y2="19"></line>
+                        <line x1="19" y1="5" x2="5" y2="19"></line>
+                    </svg>
+                </button>
+
+                <span class="cat" id="qvCat"></span>
+                <h3 id="qvName"></h3>
+                <span class="price" id="qvPrice"></span>
+                <p class="desc" id="qvDesc"></p>
+
+                <div class="qv-section">
+                    <span class="lbl">Pilih Ukuran</span>
+                    <div class="size-opts" id="qvSizes"></div>
+                </div>
+
+                <div class="qv-section">
+                    <span class="lbl">Jumlah</span>
+                    <div class="qty-row">
+                        <div class="qty-stepper">
+                            <button id="qvMinus" type="button" aria-label="Kurangi jumlah">−</button>
+                            <span id="qvQty">1</span>
+                            <button id="qvPlus" type="button" aria-label="Tambah jumlah">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qv-actions">
+                    <button class="btn btn-primary btn-block" id="qvAddBtn" type="button">Tambah ke Keranjang</button>
+                    <p class="qv-note">Checkout mudah via WhatsApp atau Transfer Bank</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- TOAST -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+            <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <span id="toastMsg">Berhasil masuk keranjang</span>
+    </div>
+
+
+    <!-- JAVASCRIPT UTAMA -->
+    <script src="js/main.js"></script>
+
+
+    <!-- SCROLL REVEAL -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const revealElements = document.querySelectorAll(".reveal");
+
+            if (!("IntersectionObserver" in window)) {
+                revealElements.forEach(function (element) {
+                    element.classList.add("visible");
+                });
+                return;
+            }
+
+            const revealObserver = new IntersectionObserver(
+                function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            const element = entry.target;
+                            const delay = element.dataset.delay || 0;
+                            setTimeout(function () {
+                                element.classList.add("visible");
+                            }, Number(delay));
+                        } else {
+                            entry.target.classList.remove("visible");
+                        }
+                    });
+                },
+                {
+                    threshold: 0.12,
+                    rootMargin: "0px 0px -60px 0px"
+                }
+            );
+
+            revealElements.forEach(function (element) {
+                revealObserver.observe(element);
+            });
+
+        });
+    </script>
+</body>
+</html>

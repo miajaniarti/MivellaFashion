@@ -1,0 +1,6 @@
+wwwroot\css\style.css
+wwwroot\js\main.js
+wwwroot\index.html
+C:\Users\Lenovo\source\repos\WebMivella\WebMivella\wwwroot\css\style.css
+C:\Users\Lenovo\source\repos\WebMivella\WebMivella\wwwroot\js\main.js
+C:\Users\Lenovo\source\repos\WebMivella\WebMivella\wwwroot\index.html
